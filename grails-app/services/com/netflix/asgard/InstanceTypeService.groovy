@@ -145,8 +145,11 @@ class InstanceTypeService implements CacheInitializer {
         String xxl = 'Double Extra Large'
         String xxxxl = 'Quadruple Extra Large'
         String xxxxxxxxl = 'Eight Extra Large'
+		String xxxxxxxxxxl = 'Ten Extra Large'
         String gen = 'General purpose'
         String second = 'Second Generation Standard'
+		String third = 'Third Generation Standard'
+		String fourth = 'fourth Generation Standard'
         String cc = 'Cluster Compute'
         String memOpt = 'Memory optimized'
         String hiMem = 'High-Memory'
@@ -179,6 +182,18 @@ class InstanceTypeService implements CacheInitializer {
                         vCpu: '4', ecu: '13', mem: '15', storage: 'EBS only', ebsOptim: 'Yes', netPerf: 'Moderate'),
                 new HardwareProfile(instanceType: 'm3.2xlarge', family: gen, group: second, size: xxl, arch: six4,
                         vCpu: '8', ecu: '26', mem: '30', storage: 'EBS only', ebsOptim: 'Yes', netPerf: 'High'),
+						
+				
+                new HardwareProfile(instanceType: 'm4.large', family: gen, group: fourth, size: 'Large', arch: six4,
+                        vCpu: '2', ecu: '6.5', mem: '8', storage: 'EBS only', ebsOptim: '-', netPerf: 'Moderate'),
+                new HardwareProfile(instanceType: 'm4.xlarge', family: gen, group: fourth, size: xl, arch: six4,
+                        vCpu: '4', ecu: '13', mem: '16', storage: 'EBS only', ebsOptim: 'Yes', netPerf: 'High'),
+                new HardwareProfile(instanceType: 'm4.2xlarge', family: gen, group: fourth, size: xxl, arch: six4,
+                        vCpu: '8', ecu: '26', mem: '32', storage: 'EBS only', ebsOptim: 'Yes', netPerf: 'High'),
+				new HardwareProfile(instanceType: 'm4.4xlarge', family: gen, group: fourth, size: xxxxl, arch: six4,
+                        vCpu: '16', ecu: '53.5', mem: '64', storage: 'EBS only', ebsOptim: 'Yes', netPerf: 'High'),
+				new HardwareProfile(instanceType: 'm4.10xlarge', family: gen, group: fourth, size: xxxxxxxxxxl, arch: six4,
+                        vCpu: '40', ecu: '124.5', mem: '160', storage: 'EBS only', ebsOptim: 'Yes', netPerf: '10 Gigabit'),
 
                 new HardwareProfile(instanceType: 'c1.medium', family: compOpt, group: hcpu, size: 'Medium',
                         arch: three2OrSix4, vCpu: '2', ecu: '5', mem: '1.7', storage: '1 x 350', ebsOptim: '-',
