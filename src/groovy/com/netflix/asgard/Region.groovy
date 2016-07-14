@@ -63,13 +63,13 @@ enum Region {
             'apac-syd',
             'ap-southeast-2.png',
             'Sydney'
-    ),
+    )//,
 
-    SA_EAST_1('sa-east-1',
-            'sa-east-1',
-            'sa-east-1.png',
-            'Sao Paulo'
-    )
+    // SA_EAST_1('sa-east-1',
+            // 'sa-east-1',
+            // 'sa-east-1.png',
+            // 'Sao Paulo'
+    // )
 
     /**
      * The commonly used code name of the region such as us-east-1.
