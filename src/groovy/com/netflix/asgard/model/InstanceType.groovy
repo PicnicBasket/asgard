@@ -61,11 +61,11 @@ enum InstanceType {
     R3Xlarge("r3.xlarge"),
     R32xlarge("r3.2xlarge"),
     R34xlarge("r3.4xlarge"),
-    R38xlarge("r3.8xlarge")
-	T2nano("t2.nano")
-	T2micro("t2.micro")
-	T2small("t2.small")
-	T2medium("t2.medium")
+    R38xlarge("r3.8xlarge"),
+	T2nano("t2.nano"),
+	T2micro("t2.micro"),
+	T2small("t2.small"),
+	T2medium("t2.medium"),
 	T2large("t2.large")
 
     private String value
